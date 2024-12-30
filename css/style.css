@@ -991,9 +991,25 @@ RESPONSIVE STYLES
     }
 
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .skill-image {
+        margin: 0 auto 1rem auto;
+        max-width: 200px;
+    }
+
+    .skill-image img {
+        width: 100%;
+        height: auto;
     }
 }
 
