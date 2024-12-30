@@ -1081,15 +1081,41 @@ RESPONSIVE STYLES
 
     .skills-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .skill-card {
         padding: 1.5rem;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .skill-icon {
         margin: 0 auto 1rem auto;
+    }
+
+    /* Hobbies section mobile */
+    .hobbies-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .hobby-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Projects section mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -1103,6 +1129,12 @@ RESPONSIVE STYLES
     }
 
     .skill-card {
-        padding: 1rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hobby-card,
+    .project-card {
+        margin-bottom: 1.5rem;
     }
 }
