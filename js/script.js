@@ -97,4 +97,25 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Intersection Observer untuk animasi fade-in
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Hentikan observasi setelah elemen muncul
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Amati semua elemen dengan kelas fade-in
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(element => observer.observe(element));
 });
