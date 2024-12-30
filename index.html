@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .result-message {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            display: none;
+        }
+        
+        .result-message.success {
+            display: block;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .result-message.error {
+            display: block;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    ==========================================
+    NAVIGATION SECTION
+    - Fixed position navbar
+    - Smooth scrolling navigation
+    - Highlight active section
+    ==========================================
+    -->
+    <nav class="navbar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 
+    ==========================================
+    HERO SECTION
+    - Personal branding introduction
+    - Engaging welcome message
+    - Professional profile image
+    ==========================================
+    -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="greeting">Welcome! 👋</div>
+            <h1>Dream, Build, Inspire</h1>
+            <p>Exploring the boundaries of imagination, crafting digital experiences that matter, and sharing knowledge to empower others. Together, let's turn possibilities into reality! ✨</p>
+        </div>
+        <div class="profile-image">
+            <img src="img/i1.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- 
+    ==========================================
+    JOURNEY SECTION
+    - Personal background
+    - Educational history
+    - Professional aspirations
+    ==========================================
+    -->
+    <section id="journey" class="journey">
+        <div class="journey-image">
+            <img src="img/i2.png" alt="Journey Image">
+        </div>
+        <div class="journey-text">
+            <h2>My Journey</h2>
+            <p>Hi there! I'm <strong>Muhammad Rafi Fathurrahman Hamid</strong>, a passionate <strong>Informatics Engineering</strong> student at Pasundan University. I'm on an exciting journey exploring the endless possibilities in the world of technology and innovation.</p>
+            <p>Through this portfolio, I invite you to explore my creative journey and discover the stories that shape my path in technology. Let's connect and create something amazing together! ✨</p>
+        </div>
+    </section>
+
+    <!-- 
+    ==========================================
+    SKILLS SECTION
+    - Core competencies
+    - Technical abilities
+    - Creative capabilities
+    ==========================================
+    -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-image">
+                    <img src="img/id.png" alt="Drawing Skill">
+                    <a href="https://www.flaticon.com/free-icons/architecture" title="architecture icons">Architecture icons created by justicon - Flaticon</a>
+                </div>
+                <h3>Drawing</h3>
+                <p>Creating beautiful artworks and illustrations with attention to detail and creativity.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-image">
+                    <img src="img/ie.png" alt="Editing Skill">
+                    <a href="https://www.flaticon.com/free-icons/image-editing" title="image editing icons">Image editing icons created by Freepik - Flaticon</a>
+                </div>
+                <h3>Editing</h3>
+                <p>Crafting engaging visual content through professional photo and video editing.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-image">
+                    <img src="img/ip.png" alt="Programming Skill">
+                    <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by juicy_fish - Flaticon</a>
+                </div>
+                <h3>Programming</h3>
+                <p>Building efficient and elegant solutions through code and problem-solving.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ==========================================
+    HOBBIES SECTION
+    - Personal interests
+    - Recreational activities
+    - Life outside work
+    ==========================================
+    -->
+    <section id="hobbies" class="hobbies">
+        <h2 class="section-title">My Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card">
+                <div class="hobby-content">
+                    <div class="hobby-image">
+                        <img src="img/ir.png" alt="Running Hobby">
+                        <a href="https://www.flaticon.com/free-icons/trail-running" title="trail running icons">Trail running icons created by Freepik - Flaticon</a>
+                    </div>
+                    <div class="hobby-text">
+                        <h3>Running</h3>
+                        <p>Staying active and healthy through regular running sessions, exploring new trails and pushing personal limits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-content">
+                    <div class="hobby-image">
+                        <img src="img/ih.png" alt="Hiking Hobby">
+                        <a href="https://www.flaticon.com/free-icons/hiking" title="hiking icons">Hiking icons created by Smashicons - Flaticon</a>
+                    </div>
+                    <div class="hobby-text">
+                        <h3>Hiking</h3>
+                        <p>Discovering nature's beauty through hiking adventures, reaching new heights and enjoying breathtaking views.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-content">
+                    <div class="hobby-image">
+                        <img src="img/ig.png" alt="Gaming Hobby">
+                        <a href="https://www.flaticon.com/free-icons/gaming" title="gaming icons">Gaming icons created by Freepik - Flaticon</a>
+                    </div>
+                    <div class="hobby-text">
+                        <h3>Gaming</h3>
+                        <p>Enjoying immersive gaming experiences, connecting with friends and exploring virtual worlds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    ==========================================
+    CONTACT SECTION
+    - Personal contact information
+    - Professional networking
+    - Collaboration opportunities
+    ==========================================
+    -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-content">
+                <h3>Let's Connect!</h3>
+                <p>Have a question or want to work together? Feel free to reach out!</p>
+            </div>
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Add your Web3Forms access key below -->
+                <input type="hidden" name="access_key" value="fa1f5a72-de05-40f8-8c00-45b3cba3795f">
+                <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <div id="result" class="result-message"></div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 
+    ==========================================
+    FOOTER SECTION
+    - Personal branding statement
+    - Copyright information
+    - Social media links
+    ==========================================
+    -->
+    <footer class="footer">
+        <p>Created with ❤️ by <span class="name">raffhamid</span></p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="js/script.js"></script>
+</body>
+</html>
