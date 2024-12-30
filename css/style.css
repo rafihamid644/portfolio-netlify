@@ -1057,3 +1057,52 @@ RESPONSIVE STYLES
         font-size: 0.75rem;
     }
 }
+
+/* Mobile Styles for Journey and Skills */
+@media screen and (max-width: 768px) {
+    .journey {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding: 4rem 1rem;
+    }
+
+    .journey-image {
+        order: -1;
+    }
+
+    .journey-text {
+        padding: 2rem;
+    }
+
+    .skills {
+        padding: 4rem 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .skill-icon {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .journey-text {
+        padding: 1rem;
+    }
+
+    .skills {
+        padding: 3rem 1rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+}
